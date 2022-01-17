@@ -35,6 +35,7 @@
     justify-content: center;
 }
 
+
 .content-body {
     display: flex;
     justify-content: space-between;
@@ -42,28 +43,31 @@
 
 .left-scroll {
     position: sticky;
-    min-height: 100px;
     max-height: calc(100vh - 110px);
-    width: 350px;
+    min-width: 300px;
+    max-width: 700px;
     top: 80px;
     margin: 30px;
     border: 1px solid #999;
     border-radius: 2px;
-    overflow: auto;
+    flex-shrink: 0;
+    overflow-y: auto;
 }
 
 .left-scroll h1 {
     padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 16px;
     font-weight: 600;
     background-size: 200% 200%;
-    background-image: linear-gradient(to left, #222 50%, black 50%);
+    background-image: linear-gradient(to left, #Ec00bd 50%, black 50%);
     color: #FFF;
     display: flex;
     padding-right: 20px;
     justify-content: space-between;
     font-family: 'Noto Sans', sans-serif;
-    transition: background-position, padding 1s;
+    transition: background-position 1s ease-in;
 }
 
 @keyframes h1animation-scroll {
