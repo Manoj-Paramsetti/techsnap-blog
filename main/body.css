@@ -43,10 +43,9 @@
 
 .left-scroll {
     position: sticky;
-    max-height: calc(100vh - 110px);
+    max-height: calc(100vh - 80px);
     width: 20vw;
     top: 80px;
-    margin: 30px;
     border: 1px solid #999;
     border-radius: 2px;
     flex-shrink: 0;
