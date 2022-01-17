@@ -500,17 +500,23 @@
 
 
 
+.mainBody {
+	width: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+/* -------------------------------------- */
 .footer_MainBox {
-	width: 100vw;
+	width: 100%;
 	background-color: #000000;
 	display: grid;
 	place-items: center;
-  font-family: 'Montserrat', sans-serif;
 }
 .Footer_page {
 	overflow: hidden;
 	width: 100%;
 	max-width: 1400px;
+	width: 100%;
 }
 .Footer_conatiner {
 	width: 100%;
@@ -521,8 +527,9 @@
 	padding: 20px;
 
 	position: relative;
-} 
+}
 .Footer_header {
+    font-family: 'Montserrat', sans-serif;
 	width: 50%;
 	height: 100%;
 	letter-spacing: 1px;
@@ -543,6 +550,7 @@
 	overflow: hidden;
 }
 .Footer_columns {
+    font-family: 'Montserrat', sans-serif;
 	height: 200px;
 	width: 25%;
 	display: flex;
@@ -572,6 +580,7 @@
 	color: #ff00bb;
 }
 .join_our {
+    font-family: 'Montserrat', sans-serif;
 	padding: 0 50px;
 	width: 100%;
 	height: 100px;
@@ -590,6 +599,7 @@
 	white-space: nowrap;
 }
 .input_holder {
+	width: 300px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -611,6 +621,7 @@
 	font-weight: 600;
 }
 .Privacy_holder {
+    font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	height: 60px;
 	background-color: #000000;
@@ -655,6 +666,7 @@
 	cursor: pointer;
 }
 .copyRight {
+    font-family: 'Montserrat', sans-serif;
 	color: rgba(255, 255, 255, 0.644);
 	height: 30px;
 	font-size: 0.7rem;
@@ -671,20 +683,15 @@
 		height: 75%;
 	}
 	.image_conatiner {
-	width: 100%;
-
+		width: 100%;
+	}
 }
-}
-
-/* /////----------------------------------free_course----------------------- */
 
 @media (max-width: 510px) {
-
 	.Social-media {
 		margin-bottom: 10px;
 	}
 }
-
 
 @media (max-width: 900px) {
 	.Footer_conatiner {
@@ -693,6 +700,7 @@
 	.Footer_header {
 		width: 100%;
 	}
+
 	.desktop {
 		display: none;
 	}
@@ -730,18 +738,7 @@
 		width: 50%;
 	}
 }
-@media (max-width: 720px) {
-	.menu_item ul {
-		display: none;
-	}
-	.menu_item {
-		display: none;
-	}
-	.buttons {
-		width: 100px;
-		background-color: red;
-	}
-}
+
 @media (max-width: 550px) {
 	.copyRight {
 		font-size: 0.5rem;
@@ -749,11 +746,9 @@
 }
 
 @media (max-width: 376px) {
-
 	.copyRight {
 		font-size: 0.5rem;
 	}
-	.contact-us-section {
-		height: 97vh;
-	}
+
 }
+

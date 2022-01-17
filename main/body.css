@@ -4,17 +4,32 @@
 }
 
 .banner {
-    height: auto;
+    height: 500px;
     padding: 60px;
-    background-color: #101D42;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.58)),
+        url('https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/web_dev_pillar_page.jpg');
+    background-size: cover;
     color: #FFF;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
 }
 
 .banner-left {
-    max-width: 1000px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'noto sans', sans-serif;
+    font-size: 14px;
+}
+
+.banner-left h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,27 +37,56 @@
 
 .content-body {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
 }
 
 .left-scroll {
     position: sticky;
-    height: calc(100vh - 110px);
-    min-width: 300px;
-    max-width: 700px;
+    min-height: 100px;
+    max-height: calc(100vh - 110px);
+    width: 350px;
     top: 80px;
     margin: 30px;
-    padding: 10px;
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 2px;
     overflow: auto;
 }
 
 .left-scroll h1 {
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    color: #666;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to left, #222 50%, black 50%);
+    color: #FFF;
+    display: flex;
+    padding-right: 20px;
+    justify-content: space-between;
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-position, padding 1s;
+}
+
+@keyframes h1animation-scroll {
+    0%{
+        padding-right: 20px;
+    }
+    100%{
+        padding-right: 10px;
+    }
+}
+
+.left-scroll h1:hover {
+    background-color: #Ec00bd;
+    color: #FFF;
+    padding-right: 10px;
+    background-position: 100%;
+    transform-origin: left;
+    animation: h1animation-scroll 0.3s linear;
+}
+
+.left-scroll h1 a {
+    text-decoration: inherit;
+    color: inherit;
 }
 
 .left-scroll h2 {
@@ -50,35 +94,59 @@
     justify-content: space-between;
     padding: 15px;
     padding-left: 25px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    border-bottom: 1px solid #DDD;
-    margin-bottom: 15px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left-scroll h2 a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.left-scroll h2 a:hover {
+    text-decoration: underline;
 }
 
 .left-scroll h3 {
     padding: 15px;
     padding-left: 30px;
     font-size: 14px;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-left: 3px solid transparent;
     color: #666;
 }
 
+.left-scroll h3:hover {
+    border-left: 3px solid #fc00bd;
+}
+
+.left-scroll h3 a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.left-scroll h3 a:hover {
+    text-decoration: underline;
+}
+
 .left-scroll hr {
-    margin-top: 15px;
+    margin-top: 10px;
     outline: 0;
     border: 0;
-    border-bottom: 1px solid #DDD;
 }
 
 .right-scroll {
     max-width: 1200px;
+    padding-top: 100px;
 }
 
 .right-scroll h1{
     margin-top: 60px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .right-scroll p {
@@ -87,11 +155,17 @@
     line-height: 24px;
     letter-spacing: 0.5px;
     color: #555;
+    padding-left: 50px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .right-scroll a {
     color: #1266F1;
     text-decoration: none;
+}
+
+.right-scroll a:hover {
+    text-decoration: underline;
 }
 
 .yellow-dash{
